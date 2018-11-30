@@ -1,0 +1,14 @@
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EFDataService.dll.config
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EFDataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EFDataService.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\DataModel.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\DataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EntityFramework.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EntityFramework.SqlServer.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\DataModel.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\DataService.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EntityFramework.xml
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Release\EntityFramework.SqlServer.xml
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\obj\Release\EFDataService.csprojResolveAssemblyReference.cache
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\obj\Release\EFDataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\obj\Release\EFDataService.pdb

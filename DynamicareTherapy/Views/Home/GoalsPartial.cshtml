@@ -1,0 +1,360 @@
+﻿
+@{
+    ViewBag.Title = "GoalsPartial";
+}
+@using Kendo.Mvc.UI;
+
+
+@if (ViewBag.Details != null)
+{
+
+    var totallist = (List<DataModel.Models.IEPProgressMonitorDetail>)ViewBag.Details;
+    var statuses = (List<DataModel.Models.IEPProgressMonitorOutcomeStatus>)ViewBag.Statuses;
+    var goals = (List<DataModel.Models.IEPOutcomeGoal>)ViewBag.Goals;
+    var row = 0;
+
+    @(Html.Kendo().TabStrip()
+                                        .Name("tabstrip")
+                                        .Items(tabstrip =>
+                                        {
+
+                                        foreach (var data in goals)
+                                        {
+                                            var detail = totallist.Where(o => o.IEPOutcomeGoalID == data.IEPOutcomeGoalID).FirstOrDefault();
+
+
+
+                                            if (row == 0)
+                                            {
+                                                tabstrip.Add().Text("Goal " + data.GoalNumber).ImageUrl(Url.Content("~/Content/Logo/ic-goal-purple.png")).Selected(true)
+                                                .Content(@<text>
+
+                                                        @{
+                                                            var FirstInputId = "OutcomeGoal" + data.IEPOutcomeGoalID;
+                                                            var SecondInputType = "ProgressInformation" + data.IEPOutcomeGoalID;
+                                                            var ThirdInputType = "NewStrategies" + data.IEPOutcomeGoalID;
+                                                        }
+                                                        <div class="container" style="width:100%;max-width:none;">
+
+                                                            <div class="row">
+                                                                <label class="Current-Outcome-Goal"> Current Outcome Goal Statement & Number</label>
+                                                            </div>
+                                                            <div class="row">
+                                                                @if (detail != null)
+                                                                {
+                                                                    <textarea id="@FirstInputId" class="Rectangle-Current-Outcome-Goal">
+
+                                                                        @detail.NewOutcomeGoal
+
+
+                                                                    </textarea>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <textarea id="@FirstInputId" class="Rectangle-Current-Outcome-Goal"></textarea>
+                                                                }
+
+
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <label class="Current-Outcome-Goal">   Outcome Status:</label>
+                                                            </div>
+                                                            <div class="row">
+                                                                <label class="Please-check-the-ap">     (Please check the appropriate outcome status of the current goal)</label>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                @foreach (var status in statuses)
+                                                                 {
+                                                                     if (detail != null)
+                                                                     {
+                                                                         if (status.IEPProgressMonitorOutcomeStatusID == detail.IEPProgressMonitorOutcomeStatusID)
+                                                                         {
+                                                                            <div class="row">
+                                                                                <div style="margin-top:16px;">
+                                                                                    <input checked="checked" type="radio" class="checkmark Status|@status.IEPProgressMonitorOutcomeStatusID" name="IEPProgressMonitorOutcomeStatusID" value="@status.IEPProgressMonitorOutcomeStatusID" style="float:left;margin-top:0px;margin-right:3px;" />
+
+                                                                                    <div class="We-still-need-to-wor" style="float:left;">
+                                                                                        @status.OutcomeStatus
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <div class="row">
+                                                                                <div style="margin-top:16px;">
+                                                                                    <input type="radio" class="checkmark Status|@status.IEPProgressMonitorOutcomeStatusID" name="IEPProgressMonitorOutcomeStatusID" value="@status.IEPProgressMonitorOutcomeStatusID" style="float:left;margin-top:0px;margin-right:3px;" />
+
+                                                                                    <div class="We-still-need-to-wor" style="float:left;">
+                                                                                        @status.OutcomeStatus
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        }
+                                                                    }
+
+                                                                    else
+                                                                    {
+                                                                        <div class="row">
+                                                                            <div style="margin-top:16px;">
+                                                                                <input type="radio" class="checkmark Status|@status.IEPProgressMonitorOutcomeStatusID" name="IEPProgressMonitorOutcomeStatusID" value="@status.IEPProgressMonitorOutcomeStatusID" style="float:left;margin-top:0px;margin-right:3px;" />
+
+                                                                                <div class="We-still-need-to-wor" style="float:left;">
+                                                                                    @status.OutcomeStatus
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    }
+
+                                                                }
+                                                            </div>
+
+
+
+                                                            <div class="row">
+                                                                <label class="Current-Outcome-Goal">   Progress Information</label>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                @*@Html.TextArea(SecondInputType, new { @class = "Rectangle-Current-Outcome-Goal", @value = goal.ProgressMeasurements, @style = "float:left;" })*@
+
+                                                                <textarea id="@SecondInputType" class="Rectangle-Current-Outcome-Goal">
+                                                                    @if (detail != null)
+                                                                    {
+                                                                        @detail.ProgressInformation
+                                                                    }
+                                                                </textarea>
+                                                            </div>
+
+
+
+                                                            <div class="row">
+                                                                <label class="Current-Outcome-Goal">    New Outcome/Goal AND/OR New Strategies</label>
+                                                            </div>
+                                                            <div class="row">
+                                                                <label class="Please-check-the-ap">      (If a new goal and/or strategies are being developed based on child’s progress please add all applicable information below)</label>
+                                                            </div>
+                                                            <div class="row">
+                                                                @*   @Html.TextArea(ThirdInputType, new { @class = "Rectangle-Current-Outcome-Goal", @value = goal.ProgressMeasurements, @style = "float:left;" })*@
+                                                                <textarea id="@ThirdInputType" class="Rectangle-Current-Outcome-Goal">
+                                                                    @if (detail != null)
+                                                                    {
+                                                                        @data.Strategies
+                                                                    }
+                                                                </textarea>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                @if (detail != null)
+                            {
+                                                                    <button class="btn-save" style="float:left;color:white;" onclick="SaveDetail(@data.IEPOutcomeGoalID,@detail.IEPProgressMonitorDetailID)">Save</button>
+                                                                    <button class="btn-delete" style="float:left;color:white;" onclick="DeleteDetail(@detail.IEPProgressMonitorDetailID)">Delete</button>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <button class="btn-save" style="float:left;color:white;" onclick="SaveDetail(@data.IEPOutcomeGoalID)">Save</button>
+
+                                                                }
+
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+                        </text>);
+                                                        row++;
+                                                    }
+                                                    else
+                                                    {
+
+                                                        tabstrip.Add().Text("Goal " + data.GoalNumber).ImageUrl(Url.Content("~/Content/Logo/ic-goal.png"))
+                            .Content(@<text>
+
+                                                                        @{
+                                                                            var FirstInputId = "OutcomeGoal" + data.IEPOutcomeGoalID;
+                                                                            var SecondInputType = "ProgressInformation" + data.IEPOutcomeGoalID;
+                                                                            var ThirdInputType = "NewStrategies" + data.IEPOutcomeGoalID;
+                                                                        }
+                                                                        <div class="container" style="width:100%;max-width:none;">
+
+                                                                            <div class="row">
+                                                                                <label class="Current-Outcome-Goal"> Current Outcome Goal Statement & Number</label>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                @*   @Html.TextArea(FirstInputId, new { @class = "Rectangle-Current-Outcome-Goal", @value = goal.GoalStatement, @style = "float:left;" })*@
+                                                                                <textarea id="@FirstInputId" class="Rectangle-Current-Outcome-Goal">
+                                                                                    @if (detail != null)
+                                                                                    {
+                                                                                        @detail.NewOutcomeGoal
+
+                                                                                    }
+                                                                                </textarea>
+
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label class="Current-Outcome-Goal">   Outcome Status:</label>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label class="Please-check-the-ap">     (Please check the appropriate outcome status of the current goal)</label>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                @foreach (var status in statuses)
+                                                                                {
+                                                                                    if (detail != null)
+                                                                                    {
+                                                                                        if (status.IEPProgressMonitorOutcomeStatusID == detail.IEPProgressMonitorOutcomeStatusID)
+                                                                                        {
+                                                                                            <div class="row">
+                                                                                                <div style="margin-top:16px;">
+                                                                                                    <input checked="checked" type="radio" class="checkmark Status|@status.IEPProgressMonitorOutcomeStatusID" name="IEPProgressMonitorOutcomeStatusID" value="@status.IEPProgressMonitorOutcomeStatusID" style="float:left;margin-top:0px;margin-right:3px;" />
+
+                                                                                                    <div class="We-still-need-to-wor" style="float:left;">
+                                                                                                        @status.OutcomeStatus
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            <div class="row">
+                                                                                                <div style="margin-top:16px;">
+                                                                                                    <input type="radio" class="checkmark Status|@status.IEPProgressMonitorOutcomeStatusID" name="IEPProgressMonitorOutcomeStatusID" value="@status.IEPProgressMonitorOutcomeStatusID" style="float:left;margin-top:0px;margin-right:3px;" />
+
+                                                                                                    <div class="We-still-need-to-wor" style="float:left;">
+                                                                                                        @status.OutcomeStatus
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        }
+                                                                                    }
+
+                                                                                    else
+                                                                                    {
+                                                                                        <div class="row">
+                                                                                            <div style="margin-top:16px;">
+                                                                                                <input type="radio" class="checkmark Status|@status.IEPProgressMonitorOutcomeStatusID" name="IEPProgressMonitorOutcomeStatusID" value="@status.IEPProgressMonitorOutcomeStatusID" style="float:left;margin-top:0px;margin-right:3px;" />
+
+                                                                                                <div class="We-still-need-to-wor" style="float:left;">
+                                                                                                    @status.OutcomeStatus
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    }
+
+                                                                                }
+                                                                            </div>
+
+
+
+                                                                            <div class="row">
+                                                                                <label class="Current-Outcome-Goal">   Progress Information</label>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                @*@Html.TextArea(SecondInputType, new { @class = "Rectangle-Current-Outcome-Goal", @value = goal.ProgressMeasurements, @style = "float:left;" })*@
+
+                                                                                <textarea id="@SecondInputType" class="Rectangle-Current-Outcome-Goal">
+                                                                                    @if (detail != null)
+                                                                                    {
+                                                                                        @detail.ProgressInformation
+                                                                                    }
+
+                                                                                </textarea>
+                                                                            </div>
+
+
+
+                                                                            <div class="row">
+                                                                                <label class="Current-Outcome-Goal">    New Outcome/Goal AND/OR New Strategies</label>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <label class="Please-check-the-ap">      (If a new goal and/or strategies are being developed based on child’s progress please add all applicable information below)</label>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                @*   @Html.TextArea(ThirdInputType, new { @class = "Rectangle-Current-Outcome-Goal", @value = goal.ProgressMeasurements, @style = "float:left;" })*@
+                                                                                <textarea id="@ThirdInputType" class="Rectangle-Current-Outcome-Goal">
+
+
+                                                                                    @if (detail != null)
+                                                                                    {
+                                                                                        @data.Strategies
+                                                                                    }
+                                                                                </textarea>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                @if (detail != null)
+                                                                                {
+                                                                                    <button class="btn-save" style="float:left;color:white;" onclick="SaveDetail(@data.IEPOutcomeGoalID,@detail.IEPProgressMonitorDetailID)">Save</button>
+                                                                                    <button class="btn-delete" style="float:left;color:white;" onclick="DeleteDetail(@detail.IEPProgressMonitorDetailID)">Delete</button>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <button class="btn-save" style="float:left;color:white;" onclick="SaveDetail(@data.IEPOutcomeGoalID)">Save</button>
+
+                                                                                }
+
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+
+
+
+
+                            </text>);
+                                                }
+
+
+                                            }
+
+
+
+                                        })
+    )
+
+
+                                                                            }
+
+
+
+
+<script>
+    function SaveDetail(GoalID,detailID) {
+        var status = $('[name=IEPProgressMonitorOutcomeStatusID]:checked').val();
+        var progressInfo = $('#ProgressInformation' + GoalID).val();
+        var strategies = $('#NewStrategies' + GoalID).val();
+        var statement= $('#OutcomeGoal' + GoalID).val();
+        $.ajax({
+            url: '/Home/SaveDetail',
+            datatype: 'json',
+            type: 'POST',
+            data: {Status:status,Progress:progressInfo,Strategy:strategies,OutcomeGoalID:GoalID,ClientMPI:@ViewBag.ClientMPI,DetailID:detailID,GoalStatement:statement},
+            success:function(result){
+                alert(result);
+                LoadPartial();
+            }
+        });
+    }
+
+    function DeleteDetail(detailID){
+        $.ajax({
+            url: '/Home/DeleteDetail',
+            datatype: 'json',
+            type: 'POST',
+            data: {DetailID:detailID},
+            success:function(result){
+                alert(result);
+                LoadPartial();
+            }
+        });
+    }
+</script>

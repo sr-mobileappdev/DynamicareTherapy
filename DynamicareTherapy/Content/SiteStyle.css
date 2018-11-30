@@ -1,0 +1,353 @@
+﻿
+
+.body-bg {
+  width: 1366px;
+  height: 387px;
+  margin-left:auto;
+  margin-right:auto;
+
+
+
+
+}
+
+.MainContainer{
+    
+
+background: rgba(244,243,252,1);
+background: -moz-linear-gradient(left, rgba(244,243,252,1) 0%, rgba(223,217,242,1) 0%, rgba(212,206,238,1) 51%, rgba(199,197,236,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(244,243,252,1)), color-stop(0%, rgba(223,217,242,1)), color-stop(51%, rgba(212,206,238,1)), color-stop(100%, rgba(199,197,236,1)));
+background: -webkit-linear-gradient(left, rgba(244,243,252,1) 0%, rgba(223,217,242,1) 0%, rgba(212,206,238,1) 51%, rgba(199,197,236,1) 100%);
+background: -o-linear-gradient(left, rgba(244,243,252,1) 0%, rgba(223,217,242,1) 0%, rgba(212,206,238,1) 51%, rgba(199,197,236,1) 100%);
+background: -ms-linear-gradient(left, rgba(244,243,252,1) 0%, rgba(223,217,242,1) 0%, rgba(212,206,238,1) 51%, rgba(199,197,236,1) 100%);
+background: linear-gradient(to right, rgba(244,243,252,1) 0%, rgba(223,217,242,1) 0%, rgba(212,206,238,1) 51%, rgba(199,197,236,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f3fc', endColorstr='#c7c5ec', GradientType=1 );
+}
+.Rectangle-Header{
+  width: 1345px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+
+.Sessions-per-week-Al {
+  width: 699px;
+  height: 20px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.3px;
+  color: #003f59;
+}
+
+li{
+    float:left;
+    padding:15px;
+}
+li a:hover {
+   color:red;
+}
+
+.logo {
+  width: 160px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.Childs-Name-MARGUS {
+  width: 267px;
+  height: 25px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  color: #003f59;
+}
+.Childs-Name-MARGUS .text-style-1 {
+  font-weight: normal;
+}
+
+.btn-ShowIEP {
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #003f59;
+}
+
+.btn-MarkCompleted {
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #088946;
+}
+
+.Show-IEP {
+  width: 61px;
+  height: 16px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.Mark-Completed {
+  width: 110px;
+  height: 16px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+
+.Rectangle-LeftColumn {
+  width: 570px;
+  height: 800px;
+  object-fit: contain;
+  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom:50px;
+}
+
+.Rectangle-RightColumn-First {
+  width: 570px;
+  /*height: 131px;*/
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+
+
+
+.Rectangle-RightColumn-Second {
+  width: 570px;
+  height: 2300px;
+  object-fit: contain;
+  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.Rectangle-RightColumn-Second-Inner {
+  width: 570px;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #d8d8d8;
+}
+.Rectangle-RightColumn-Forth {
+  width: 570px;
+  height: 131px;
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+
+.Rectangle-RightColumn-Fifth {
+  width: 570px;
+  height: 131px;
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+
+.Rectangle-RightColumn-Sixth {
+  width: 570px;
+  height: 131px;
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+
+.Goal-1 {
+  width: 128px;
+  height: 15px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.94;
+  letter-spacing: 0.2px;
+  color: #003f59;
+  float:left;
+}
+
+.Start-a-new-progress {
+  width: 172px;
+  height: 16px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #9d5ad0;
+  float:left;
+
+}
+
+.icon-chevron {
+  width: 7px;
+  height: 10px;
+  transform: rotate(90deg);
+  background-color:#7f9ead;
+  float:left;
+
+}
+
+
+
+.DateDevelopped {
+     
+  width: 171px;
+  height: 16px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  color: #7f9ead;
+  float:left;
+
+}
+
+
+.Date-completed {
+  width: 98px;
+  height: 16px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  color: #7f9ead;
+  float:left;
+
+}
+
+
+.During-daily-routine {
+  width: 510px;
+  height: 36px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: 0.2px;
+  color: #7f9ead;
+  float:left
+}
+
+
+
+.Current-Outcome-Goal {
+  width: 326px;
+  height: 20px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: #4d4d4d;
+}
+
+
+.Rectangle-Current-Outcome-Goal {
+  width: 510px;
+  height: 200px;
+  background-color: #edf5f9;
+}
+
+.Outcome-Status {
+  width: 123px;
+  height: 20px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: #4d4d4d;
+}
+
+.Please-check-the-ap {
+  width: 394px;
+  height: 20px;
+  opacity: 0.75;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.3px;
+  color: #003f59;
+}
+
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  background-color: #003f59;
+}
+
+
+.We-still-need-to-wor {
+  width: 460px;
+  height: 32px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color:#003f59;
+}
+
+.Progress-Information {
+  width: 157px;
+  height: 20px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color:#4d4d4d;
+}
+
+.btn-save {
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  background-color:#003f59;
+}
+.btn-delete {
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #d0021b;
+}

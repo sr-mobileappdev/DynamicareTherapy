@@ -1,0 +1,32 @@
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Debug\DataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Debug\DataService.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Debug\DataModel.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Debug\EntityFramework.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Debug\DataModel.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Debug\EntityFramework.xml
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\obj\Debug\DataService.csprojResolveAssemblyReference.cache
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\obj\Debug\DataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\obj\Debug\DataService.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\DataService.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\DataService.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\DataModel.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\EntityFramework.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\DataModel.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\DataModel.dll.config
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\bin\Debug\EntityFramework.xml
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\obj\Debug\DataService.csprojResolveAssemblyReference.cache
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\obj\Debug\DataService.csproj.CoreCompileInputs.cache
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\obj\Debug\DataService.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\DataService\obj\Debug\DataService.pdb
+D:\DynamicareTherapy\DataService\bin\Debug\DataService.dll
+D:\DynamicareTherapy\DataService\bin\Debug\DataService.pdb
+D:\DynamicareTherapy\DataService\bin\Debug\DataModel.dll
+D:\DynamicareTherapy\DataService\bin\Debug\EntityFramework.dll
+D:\DynamicareTherapy\DataService\bin\Debug\DataModel.pdb
+D:\DynamicareTherapy\DataService\bin\Debug\DataModel.dll.config
+D:\DynamicareTherapy\DataService\bin\Debug\EntityFramework.xml
+D:\DynamicareTherapy\DataService\obj\Debug\DataService.csprojAssemblyReference.cache
+D:\DynamicareTherapy\DataService\obj\Debug\DataService.csproj.CoreCompileInputs.cache
+D:\DynamicareTherapy\DataService\obj\Debug\DataService.csproj.CopyComplete
+D:\DynamicareTherapy\DataService\obj\Debug\DataService.dll
+D:\DynamicareTherapy\DataService\obj\Debug\DataService.pdb

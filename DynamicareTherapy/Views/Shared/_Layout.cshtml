@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @*<link rel="stylesheet" href="~/Content/SiteStyle.css" />*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    @Scripts.Render("~/bundles/jquery")
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/kendo/2016.1.412/kendo.common.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/kendo/2016.1.412/kendo.blueopal.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/kendo/2016.1.412/kendo.blueopal.mobile.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/kendo/2016.1.412/kendo.custom.css")" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="@Url.Content("~/Scripts/kendo/2016.1.412/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2016.1.412/kendo.aspnetmvc.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2016.1.412/jszip.min.js")"></script>
+
+    <style>
+        .Goal {
+
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.94;
+  letter-spacing: 0.2px;
+  color: #003f59;
+}
+        .GoalDate {
+
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  color:#7f9ead;
+}
+        .GoalContent {
+  width: 100%;
+  height: 36px;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: 0.2px;
+    color:#7f9ead;
+}
+.container{
+            padding-left:0px;padding-right:0px;
+        }
+.MainContainer {
+    background-image: url(../../Content/Logo/body-bg_Large.png);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+       
+.Childs-Name-MARGUS {
+ 
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  color: #003f59;
+}
+
+        
+.btn-ShowIEP {
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #003f59;
+}
+
+.btn-MarkCompleted {
+  width: 180px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #088946;
+}
+
+.Show-IEP {
+ 
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.Mark-Completed {
+
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+.Start-a-new-progress {
+  
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #9d5ad0;
+
+
+}
+.row{
+    margin-right:0px;
+    margin-left:0px;
+}
+.col-md-4 {
+    padding-left:0px;
+    padding-right:0px;
+}
+.col-md-6 {
+    padding-left:0px;
+    padding-right:0px;
+}
+.col-md-8 {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+
+.Current-Outcome-Goal {
+ 
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  color: #4d4d4d;
+}
+.Please-check-the-ap {
+ 
+  opacity: 0.75;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.3px;
+  color: #003f59;
+}
+.checkmark {
+  width: 18px;
+  height: 18px;
+  background-color: #003f59;
+}
+
+.Rectangle-Current-Outcome-Goal {
+  width: 510px;
+  height: 200px;
+  background-color: #edf5f9;
+}
+
+
+.We-still-need-to-wor {
+
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color:#003f59;
+}
+.btn-save {
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  background-color:#003f59;
+}
+.btn-delete {
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #d0021b;
+}
+    </style>
+</head>
+<body class="MainContainer" style="padding-top:0px;">
+    <div class="container" style="width:100% !important;max-width:none;padding-left:0px;padding-right:0px;" >
+
+        <div class="row" style="margin-top:30px;background:white;padding:15px;">
+            <div class="col-md-4">
+                <img class="logo" src="~/Content/Logo/logo.png"  />
+
+            </div>
+            <div class="col-md-8">
+              
+                <ul class="Sessions-per-week-Al" style="list-style:none;">
+                    <li style="float:left;padding:15px;"><a href="#">Sessions per week</a>  </li>
+                    <li style="float:left;padding:15px;"><a href="#">All sessions</a>  </li>
+                    <li style="float:left;padding:15px;"><a href="#">Weekly Summary List</a> </li>
+                    <li style="float:left;padding:15px;"><a href="#">Client List</a>  </li>
+
+                    <li style="float:left;padding:15px;"><a href="#">Manage profile</a>  </li>
+                    <li style="float:left;padding:15px;"><a href="#">Log off</a></li>
+
+                </ul>
+            </div>
+
+
+              
+
+         
+        </div>
+
+
+        <div class="row" style="padding:25px;">
+            <div class="col-md-6">
+                <label class="Childs-Name-MARGUS"><span style="font-size:13px;">Child's Name:</span>  MARGUS M BARKLEY</label>
+            </div>
+            <div class="col-md-6">
+                <button class="btn-MarkCompleted" style="float:right"><span class="Mark-Completed">Mark Completed</span></button>
+                <button class="btn-ShowIEP" style="float:right"><span class="Show-IEP">Show IEP</span></button>
+
+            </div>
+        </div>
+
+
+        @RenderBody()
+    </div>
+  
+    @RenderSection("scripts", required: false)
+</body>
+</html>

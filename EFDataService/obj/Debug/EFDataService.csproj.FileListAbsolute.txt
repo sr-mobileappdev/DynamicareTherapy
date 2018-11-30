@@ -1,0 +1,47 @@
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.dll.config
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\DataModel.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\DataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\DataModel.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\DataService.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.xml
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.csprojResolveAssemblyReference.cache
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.dll.config
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\DataModel.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\DataService.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.SqlServer.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\DataModel.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\DataModel.dll.config
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\DataService.pdb
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.xml
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.SqlServer.xml
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.csprojResolveAssemblyReference.cache
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.csproj.CoreCompileInputs.cache
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.dll
+G:\Freelancer\Project\New folder (6)\Project\DynamicareTherapy20181124-1\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.pdb
+D:\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.dll.config
+D:\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.dll
+D:\DynamicareTherapy\EFDataService\bin\Debug\EFDataService.pdb
+D:\DynamicareTherapy\EFDataService\bin\Debug\DataModel.dll
+D:\DynamicareTherapy\EFDataService\bin\Debug\DataService.dll
+D:\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.dll
+D:\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.SqlServer.dll
+D:\DynamicareTherapy\EFDataService\bin\Debug\DataModel.pdb
+D:\DynamicareTherapy\EFDataService\bin\Debug\DataModel.dll.config
+D:\DynamicareTherapy\EFDataService\bin\Debug\DataService.pdb
+D:\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.xml
+D:\DynamicareTherapy\EFDataService\bin\Debug\EntityFramework.SqlServer.xml
+D:\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.csprojAssemblyReference.cache
+D:\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.csproj.CoreCompileInputs.cache
+D:\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.csproj.CopyComplete
+D:\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.dll
+D:\DynamicareTherapy\EFDataService\obj\Debug\EFDataService.pdb

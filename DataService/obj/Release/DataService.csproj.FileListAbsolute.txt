@@ -1,0 +1,9 @@
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Release\DataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Release\DataService.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Release\DataModel.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Release\EntityFramework.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Release\DataModel.pdb
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\bin\Release\EntityFramework.xml
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\obj\Release\DataService.csprojResolveAssemblyReference.cache
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\obj\Release\DataService.dll
+D:\projects\DynamicareTherapy\DynamicareTherapyProject\DynamicareTherapy\DataService\obj\Release\DataService.pdb

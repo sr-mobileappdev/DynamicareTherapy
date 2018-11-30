@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .k-grid {
+        overflow: auto;
+    }
+</style>
+@using Kendo.Mvc.UI;
+
+<div class="row" style="padding:25px;">
+
+    <div class="col-md-6" style="background:white;">
+        <div style="margin-top:31px;padding:10px;" id="GoalsPartialDiv">
+
+
+            @Html.Action("GoalsPartial", "Home", new { ClientMPI = ViewBag.ClientMPI })
+
+        </div>
+    </div>
+    <div class="col-md-6" style="padding-left:30px">
+        @foreach (var goal in (List<DataModel.Models.IEPOutcomeGoal>)ViewBag.Goals)
+        {
+            <div class="row" style="background:white;padding:20px;margin-bottom:20px;width:75%;">
+
+                <div class="row">
+                    <div class="col-md-5 Goal">
+                        Outcome/Goal: @goal.GoalNumber
+                    </div>
+                    <div class="col-md-7">
+                        <a class="collapsed" style="float:right" role="button" data-toggle="collapse" data-parent="#accordion" href="#@goal.IEPOutcomeGoalID" aria-expanded="false" aria-controls="@goal.IEPOutcomeGoalID">
+                            <span style="">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+
+                        <label class="Start-a-new-progress" style="margin-right:25px;float:right"> Start a new progress monitor</label>
+
+                      
+                    </div>
+                   
+                </div>
+
+                <div  id="@goal.IEPOutcomeGoalID" class="panel-collapse collapse in row" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="GoalDate">  Date developed:@goal.DateGoalDeveloped</label>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label class="GoalDate"> Date completed: @goal.DateGoalCompleted</label>
+
+                            </div>
+                        </div>
+                  
+                    <div class="row GoalContent" style="margin-top:15px;">
+                        @goal.GoalStatement
+                    </div>
+
+                </div>
+
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var selectedClient = 0;
+    function ClientIDSelected(e) {
+        var dataItem = this.dataItem(e.item.index()).Value;
+        selectedClient = dataItem;
+        var grid = $('#Grid').data("kendoGrid");
+        grid.dataSource.read();
+    }
+
+    function AdditionalData() {
+
+        var clientId = $('#ClientID').val();
+
+
+        return {
+            ClientMPI: selectedClient
+        }
+    }
+
+    function LoadPartial() {
+        $.ajax({
+            url: '/Home/GoalsPartial',
+            data: {ClientMPI:@ViewBag.ClientMPI},
+            success:function(result){
+                $('#GoalsPartialDiv').html(result);
+            }
+        })
+    }
+
+    $('.panel-collapse').on('show.bs.collapse', function () {
+        $(this).siblings('.panel-heading').addClass('active');
+    });
+
+    $('.panel-collapse').on('hide.bs.collapse', function () {
+        $(this).siblings('.panel-heading').removeClass('active');
+    });
+</script>
